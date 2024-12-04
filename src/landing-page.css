@@ -1,0 +1,304 @@
+.hero-section {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+  animation-delay: 5s;
+  z-index: 1;
+}
+.hero-texts {
+  width: 70%;
+  padding-left: 5%;
+  align-content: center;
+}
+.hero-texts h5{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: gray;
+  font-weight: 200;
+}
+.hero-texts p {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  font-size: 48px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  line-height: 60px;
+}
+.hero-texts button {
+  padding: 13px 18px;
+  font-size: 17px;
+  background-color: rgb(36, 36, 36);
+  color: rgb(0, 105, 146);
+  border-radius: 3px;
+  border: none;
+}
+.hero-texts button:hover {
+  padding: 12px 17px;
+  border: 1px solid white;
+  background-color: gray;
+  transition: 1s;
+}
+.socials {
+  width: 10%;
+  align-content: center;
+}
+.socials img {
+  display: block;
+  margin-bottom: 20%;
+}
+/* Add this to your CSS file */
+@keyframes slideDown {
+  0% {
+    transform: translateY(100px); /* Start from below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* End at the styled position */
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 4s ease-out; /* Adjust duration and easing */
+  animation-fill-mode: forwards; /* Ensures it stays in the final position */
+}
+.arrow-down {
+  width: 1.5%;
+  margin-left: 49.25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.best-projects {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 37px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.horizontal-line {
+  width: 90%;
+  margin-top: -2%;
+}
+.main-box {
+  width: 90%;
+  margin-left: 5%;
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  background: rgba(28, 28, 28, 0.221); /* Semi-transparent white */
+  backdrop-filter: blur(50px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 20px; 
+  padding-top: 2%;
+  padding-bottom: 4%;
+  border: 1px solid rgba(28, 28, 28, 0.221);
+}
+.main-box:hover {
+  border: 1px solid rgb(0, 105, 146);
+  transition: 1s;
+}
+.box-1 {
+  width: 50%;
+  align-content: center;
+}
+.date {
+  color: rgb(144, 144, 144);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.box-1 h2 {
+  font-size: 55px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-top: 15%;
+}
+.details {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+  margin-top: -5%;
+}
+.web-address {
+  text-decoration: none;
+  background-color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+  padding: 12px 20px 14px 20px;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.web-address:hover {
+  padding: 11px 19px 13px 19px;
+  border: 1px solid rgb(0, 105, 146);
+  transition: 0.5s;
+}
+.languages-container {
+  width: 40%;
+  display: flex;
+  height: 40px;
+  justify-content: space-evenly;
+  gap: 1%;
+  margin-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.small-box {
+  align-content: center;
+  width: 32%;
+  gap: 5%;
+  text-align: center;
+  background-color: rgb(31, 31, 31);
+  font-size: 12px;
+  color: rgb(0, 105, 146);
+  border-radius: 5px;
+}
+.box-2 {
+  width: 401px;
+  height: 447px;
+  margin-right: 3%;
+}
+.box-2 img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .hero-texts h5 {
+    font-size: 17px;
+  }
+  .hero-texts p {
+    font-size: 29px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .box-1 h2 {
+    font-size: 30px;
+  }
+  .details {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 2%;
+    margin-bottom: 7%;
+  }
+  .web-address {
+    font-size: 10px;
+  }
+  .small-box {
+    font-size: 9px;
+  }
+  .box-2 {
+    width: 301px;
+    height: 387px;
+  }
+  @media (max-width: 767px) {
+    .hero-section {
+      padding-top: 12%;
+    }
+    .hero-texts h5 {
+      font-size: 15px;
+    }
+    .hero-texts p {
+      font-size: 22px;
+      letter-spacing: 0;
+      line-height: 40px;
+    }
+    .box-1 h2 {
+      font-size: 30px;
+    }
+    .details {
+      font-size: 12px;
+      line-height: 22px;
+      margin-top: 2%;
+      margin-bottom: 7%;
+    }
+    .web-address {
+      font-size: 10px;
+    }
+    .small-box {
+      font-size: 8px;
+    }
+    .box-2 {
+      width: 280px;
+      height: 307px;
+    }
+    .date {
+      font-size: 12px;
+    }
+    .best-projects {
+      margin-top: 10%;
+      font-size: 25px;
+    }
+    .arrow-down {
+      margin-top: -9%;
+    }
+    .languages-container {
+      width: 60%;
+      height: 35px;
+      margin-top: 10%;
+    }
+    @media (max-width: 500px) {
+      .hero-section {
+        padding-top: 20%;
+        height: 450px;
+        margin-bottom: 10%;
+      }
+      .hero-texts h5 {
+        font-size: 11px;
+      }
+      .hero-texts p {
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 26px;
+      }
+      .hero-texts button {
+        font-size: 10px;
+      }
+      .arrow-down {
+        width: 1.5%;
+        margin-left: 49.25%;
+        margin-top: 7%;
+      }
+      .box-1 h2 {
+        font-size: 22px;
+      }
+      .details {
+        font-size: 9px;
+        line-height: 18px;
+        margin-top: 2%;
+        margin-bottom: 7%;
+      }
+      .web-address {
+        font-size: 8px;
+      }
+      .small-box {
+        font-size: 8px;
+      }
+      .box-2 {
+        width: 200px;
+        height: 277px;
+      }
+      .date {
+        font-size: 10px;
+      }
+      .best-projects {
+        margin-top: 20%;
+        font-size: 18px;
+      }
+      .languages-container {
+        width: 80%;
+        height: 35px;
+        margin-top: 10%;
+      }
+      .main-box {
+        margin-bottom: -10%;
+      }
+    }
+  }
+}

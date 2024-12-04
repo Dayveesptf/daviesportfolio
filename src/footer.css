@@ -1,0 +1,96 @@
+.footer {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10%;
+    color: white;
+    background-color: black;
+    gap: 15%;
+    margin-bottom: 0;
+}
+.footer-title {
+    align-content: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+}
+.secondary-links {
+    width: 20%;
+    justify-content: space-evenly;
+    align-content: center;
+    display: flex;
+}
+.cont1 {
+    align-content: center;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    color: gray;
+}
+.email {
+    align-content: center;
+}
+.email h5{
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+}
+.email h5 a {
+  text-decoration: none;
+  color: white;
+}
+.cont1 h6 a {
+    text-decoration: none;
+    color: gray;
+}
+.cont1 h6 a:hover {
+  color: rgb(0, 105, 146);
+}
+    
+    @media (max-width: 767px) {
+      .footer-title {
+        font-size: 17px;
+      }
+      .secondary-links {
+        width: 30%;
+      }
+      .email h5 {
+        font-size: 11px;
+      }
+      @media (max-width: 616px) {
+        .footer {
+            gap: 10%;
+        }
+        .footer-title {
+            font-size: 15px;
+          }
+          .secondary-links {
+            width: 30%;
+          }
+          .cont1 {
+            font-size: 15px;
+          }
+          .email h5 {
+            font-size: 9px;
+          }
+          @media (max-width: 400px) {
+            .footer {
+                gap: 10%;
+            }
+            .footer-title {
+                font-size: 12px;
+                font-weight: 100;
+              }
+              .secondary-links {
+                width: 30%;
+              }
+              .cont1 {
+                font-size: 10px;
+              }
+              .email h5 {
+                font-size: 8px;
+              }
+          }
+      }
+    }
+  
+  

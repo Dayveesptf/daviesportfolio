@@ -1,0 +1,111 @@
+.second-blog-wrapper {
+    margin-top: 0;
+    padding-top: 10%;
+}
+.second-blog-item {
+    width: 70%;
+    margin-left: 15%;
+    background: rgba(28, 28, 28, 0.322); /* Semi-transparent white */
+    backdrop-filter: blur(100px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgb(66, 66, 66);
+    padding-top: 4%;
+    padding-bottom: 5%;
+    margin-top: 0;
+}
+
+.second-blog-item h6 {
+    margin-left: 10%;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(71, 71, 71);
+    width: 80%;
+    font-weight: 100;
+}
+.second-blog-item h1 {
+    margin-left: 10%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    width: 80%;
+    font-size: 50px;
+}
+.second-blog-item p {
+    margin-left: 10%;
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(178, 178, 178);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 3%;
+    line-height: 30px;
+}
+@media (max-width: 900px) {
+    .second-blog-wrapper {
+        padding-top: 20%;
+    }
+    .second-blog-item {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .second-blog-item h1 {
+        font-size: 40px;
+    }
+    .second-blog-item p {
+        font-size: 17px;
+        line-height: 30px;
+    } 
+    @media (max-width: 635px) {
+        .second-blog-wrapper {
+            padding-top: 25%;
+        }
+        .second-blog-item {
+            width: 90%;
+            margin-left: 5%;
+        }
+        .second-blog-item h6 {
+            width: 94%;
+            margin-left: 3%;
+            font-size: 12px;
+        }
+        .second-blog-item h1 {
+            font-size: 32px;
+            width: 94%;
+            margin-left: 3%;
+        }
+        .second-blog-item p {
+            font-size: 13px;
+            line-height: 26px;
+            width: 94%;
+            margin-left: 3%;
+        } 
+        @media (max-width: 500px) {
+            .second-blog-wrapper {
+                padding-top: 32%;
+                padding-bottom: 7%;
+            }
+            .second-blog-item {
+                width: 90%;
+                margin-left: 5%;
+            }
+            .second-blog-item h6 {
+                width: 90%;
+                margin-left: 5%;
+                font-size: 12px;
+            }
+            .second-blog-item h1 {
+                font-size: 24px;
+                width: 90%;
+                margin-left: 5%;
+            }
+            .second-blog-item p {
+                font-size: 9px;
+                line-height: 17px;
+                width: 90%;
+                margin-left: 5%;
+            } 
+        }
+    }
+}
