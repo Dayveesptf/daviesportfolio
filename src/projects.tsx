@@ -6,7 +6,7 @@ import pic3 from '../src/assets/Screenshot (154).png'
 import pic4 from '../src/assets/Screenshot (151).png'
 import pic5 from '../src/assets/Screenshot (156).png'
 import pic6 from '../src/assets/Screenshot (147).png'
-import pic7 from '../src/assets/Screenshot (70).png'
+import pic7 from '../src/assets/Screenshot (191).png'
 import pic8 from '../src/assets/Screenshot (71).png'
 import Footer from './footer';
 import Navbar from './navbar'
@@ -106,7 +106,7 @@ function Projects() {
           <p className='date'>September. 2024</p>
           <h2>To-Do-List</h2>
           <p className='details'>I implemented user interface design to create a to-do list with HTML, CSS AND Javascript for task management.</p>
-          <a href='https://dayveesptf.github.io/simon-game' className='web-address'>Check it out</a>
+          <a href='https://to-do-list-two-eta-46.vercel.app/' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>React</div>
             <div className='small-box'>HTML</div>
@@ -123,7 +123,7 @@ function Projects() {
           <p className='date'>December. 2023</p>
           <h2>Drum kit</h2>
           <p className='details'>I implemented user interface design to create a project that plays the sounds of different instruments with HTML, CSS AND Javascript.</p>
-          <a href='https://dayveesptf.github.io/simon-game' className='web-address'>Check it out</a>
+          <a href='' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>Javascript</div>
             <div className='small-box'>HTML</div>
@@ -140,7 +140,7 @@ function Projects() {
           <p className='date'>March. 2023</p>
           <h2>Blog website</h2>
           <p className='details'>I implemented user interface design to create a blog website with HTML, CSS AND Javascript.</p>
-          <a href='https://dayveesptf.github.io/simon-game' className='web-address'>Check it out</a>
+          <a href='' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>Javascript</div>
             <div className='small-box'>HTML</div>
@@ -155,9 +155,9 @@ function Projects() {
       <div className='main-box'>
         <div className='box-1'>
           <p className='date'>July. 2023</p>
-          <h2>Sneakers</h2>
-          <p className='details'>I implemented user interface design to create an ecommerce website with HTML, CSS AND Javascript.</p>
-          <a href='https://dayveesptf.github.io/simon-game' className='web-address'>Check it out</a>
+          <h2>Bento Grid</h2>
+          <p className='details'>I implemented user interface design to create a blog page with HTML, CSS AND Javascript, testing out grid layouts</p>
+          <a href='https://bento-grid-ruby.vercel.app/' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>Javascript</div>
             <div className='small-box'>HTML</div>
@@ -174,7 +174,7 @@ function Projects() {
           <p className='date'>W. blog</p>
           <h2>Web3 adverts blog</h2>
           <p className='details'>I implemented user interface design to create a blog website for web3 content with HTML, CSS AND Javascript.</p>
-          <a href='https://dayveesptf.github.io/simon-game' className='web-address'>Check it out</a>
+          <a href='' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>Javascript</div>
             <div className='small-box'>HTML</div>
