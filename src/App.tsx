@@ -8,6 +8,7 @@ import FirstBlog from './blog-pages/first-blog';
 import SecondBlog from './blog-pages/second-blog';
 import ThirdBlog from './blog-pages/third-blog';
 import FourthBlog from './blog-pages/fourth-blog';
+import FifthBlog from './blog-pages/fifth-blog';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog/blog2" element={<SecondBlog />} />
           <Route path="/blog/blog3" element={<ThirdBlog />} />
           <Route path="/blog/blog4" element={<FourthBlog />} />
+          <Route path="/blog/blog5" element={<FifthBlog />} />
         </Routes>
       </div>
   );
