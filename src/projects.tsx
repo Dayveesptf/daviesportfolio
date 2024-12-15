@@ -172,9 +172,9 @@ function Projects() {
       <div className='main-box'>
         <div className='box-1'>
           <p className='date'>W. blog</p>
-          <h2>Web3 adverts blog</h2>
-          <p className='details'>I implemented user interface design to create a blog website for web3 content with HTML, CSS AND Javascript.</p>
-          <a href='' className='web-address'>Check it out</a>
+          <h2>Multi Step Form</h2>
+          <p className='details'>I implemented user interface design to create a dynamic, multi-step form for selecting subscription plans and add-ons.</p>
+          <a href='https://multi-step-form-nu-green.vercel.app/' className='web-address'>Check it out</a>
           <div className='languages-container'>
             <div className='small-box'>Javascript</div>
             <div className='small-box'>HTML</div>
