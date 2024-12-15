@@ -43,6 +43,15 @@ function Blog() {
             <h5><Link to="/blog/blog4">Read More</Link></h5>
           </div>
       </div>
+
+      <div className="blog-grid-1 third">
+          <div className="blog-item">
+            <h6>🗓️ December 15, 2024</h6>
+            <h1>Link vs useNavigate</h1>
+            <p>Understanding the Differences Between Link and useNavigate in React Router and implementation..... </p>
+            <h5><Link to="/blog/blog5">Read More</Link></h5>
+          </div>
+      </div>
       <Footer />
       </>
   )
