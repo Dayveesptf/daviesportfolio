@@ -7,7 +7,7 @@ import pic4 from '../src/assets/Screenshot (151).png'
 import pic5 from '../src/assets/Screenshot (156).png'
 import pic6 from '../src/assets/Screenshot (147).png'
 import pic7 from '../src/assets/Screenshot (191).png'
-import pic8 from '../src/assets/Screenshot (71).png'
+import pic8 from '../src/assets/Screenshot (192).png'
 import Footer from './footer';
 import Navbar from './navbar'
 
