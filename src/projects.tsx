@@ -19,6 +19,24 @@ function Projects() {
   const [hasScrolledOnce, setHasScrolledOnce] = useState(false);
 
   useEffect(() => {
+    const projectItems = document.querySelectorAll('.main-box');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Add class when in view
+        } else {
+          entry.target.classList.remove('visible'); // Remove class when out of view
+        }
+      });
+    }, { threshold: 0.5 }); // Adjust threshold as needed
+  
+    projectItems.forEach(item => observer.observe(item));
+  
+    return () => observer.disconnect(); // Clean up observer on component unmount
+  }, []);
+  
+  useEffect(() => {
     if (index < fullText.length) {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + fullText[index]);
