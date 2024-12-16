@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './landing-page.css'
 import './blog.css'
@@ -5,7 +6,24 @@ import Navbar from './navbar';
 import Footer from './footer';
 
 function Blog() {
-
+   useEffect(() => {
+    const blogItems = document.querySelectorAll('.blog-item');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible'); // Add class when in view
+        } else {
+          entry.target.classList.remove('visible'); // Remove class when out of view
+        }
+      });
+    }, { threshold: 0.5 }); // Adjust threshold as needed
+  
+    blogItems.forEach(item => observer.observe(item));
+  
+    return () => observer.disconnect(); // Clean up observer on component unmount
+  }, []);
+  
   return (
       <>
       <Navbar />
