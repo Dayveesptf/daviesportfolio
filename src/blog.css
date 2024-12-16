@@ -23,11 +23,13 @@
     border: 1px solid rgb(66, 66, 66);
     padding-top: 2%;
     padding-bottom: 3%;
-    -webkit-animation: appear 0.8s ease-in-out; /* Safari */
-    animation: appear 0.8s ease-in-out; /* Other browsers */
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.3); /* Start smaller */
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.blog-item:hover {
-    border-color: rgb(0, 105, 146);
+.blog-item.visible {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Grow to full size */
 }
 .blog-item h6 {
     margin-left: 5%;
@@ -68,27 +70,6 @@
 .blog-item h5 a {
     text-decoration: none;
     color: rgb(0, 105, 146);
-}
-@-webkit-keyframes appear {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 @media (max-width: 767px) {
     .blog-header {
