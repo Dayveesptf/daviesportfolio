@@ -81,7 +81,7 @@ const Projects = () => {
                   <FaHtml5/>
                   <CgVercel/>
                 </div>
-                <a href="https://blog-website-dd.vercel.app/" className='text-lg text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
+                <a href="https://titan-9njp4xlfy-davies-projects-f9479dfc.vercel.app/" className='text-lg text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
               </div>
             </div>
 
