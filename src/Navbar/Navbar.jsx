@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleScroll = () => {
-        if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+        if (window.scrollY > 50) {
           setIsScrolled(true);
         } else {
           setIsScrolled(false);

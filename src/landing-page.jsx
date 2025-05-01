@@ -13,33 +13,30 @@ import { CgVercel } from 'react-icons/cg'
 
 function LandingPage() {
 
-  const sectionsRef = useRef([]); // Store references to all the sections
+  const sectionsRef = useRef([]);
 
-    // Add references dynamically
     const addToRefs = el => {
       if (el && !sectionsRef.current.includes(el)) {
-        sectionsRef.current.push(el); // Avoid duplicate refs
+        sectionsRef.current.push(el);
       }
     };
   
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.4, // Trigger when 20% of the element is visible
+      threshold: 0.4,
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible"); // Add class
-          observer.unobserve(entry.target); // Stop observing
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); 
         }
       });
     }, observerOptions);
 
-    // Observe each section
     sectionsRef.current.forEach(section => observer.observe(section));
 
-    // Cleanup observer on component unmount
     return () => observer.disconnect();
   }, []);
   

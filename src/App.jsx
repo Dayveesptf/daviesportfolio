@@ -1,6 +1,6 @@
 import {  Routes, Route } from 'react-router-dom';
-import LandingPage from './landing-page'; // Adjust path if necessary
-import Projects from './projects'; // Adjust path if necessary
+import LandingPage from './landing-page';
+import Projects from './projects';
 import About from './about';
 import ScrollToTop from './scroll';
 

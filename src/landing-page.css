@@ -2,12 +2,12 @@
 
 
 .sections {
-  opacity: 0; /* Initially hidden */
-  transform: translateY(100px); /* Start position */
+  opacity: 0;
+  transform: translateY(100px);
 }
 
 .sections.visible {
-  animation: slideUp 0.7s ease forwards; /* Trigger animation */
+  animation: slideUp 0.7s ease forwards;
 }
 
 .fix-img1 {
@@ -78,7 +78,7 @@
       left: 0;
       width: 100%;
       height: 90vh;
-      z-index: 20; /* Place it behind the content */
+      z-index: 20;
     }
     .slider2::before {
       content: "";
@@ -87,8 +87,8 @@
       left: 0;
       width: 100%;
       height: 90vh;
-      background-color: rgba(0, 0, 0, 0.771); /* Adjust opacity for brightness */
-      z-index: 20; /* Place it behind the content */
+      background-color: rgba(0, 0, 0, 0.771);
+      z-index: 20;
     }
     .slider3::before {
       content: "";
@@ -97,8 +97,8 @@
       left: 0;
       width: 100%;
       height: 90vh;
-      background-color: rgba(0, 0, 0, 0); /* Adjust opacity for brightness */
-      z-index: 20; /* Place it behind the content */
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 20; 
     }
     .slider::before {
       content: "";
@@ -107,20 +107,20 @@
       left: 0;
       width: 100%;
       height: 90vh;
-      background-color: rgba(0, 0, 0, 0); /* Adjust opacity for brightness */
-      z-index: 20; /* Place it behind the content */
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 20;
     }
     .slide-top1 > * {
       position: relative;
-      z-index: 20; /* Ensure contents are above the overlay */
+      z-index: 20;
     }
     .slider2 > *, .slider3 > * {
       position: relative;
-      z-index: 20; /* Ensure contents are above the overlay */
+      z-index: 20;
     }
     .slider > * {
       position: relative;
-      z-index: 20; /* Ensure contents are above the overlay */
+      z-index: 20;
     }
     .edit-text, .edit-text3 {
       color: white;

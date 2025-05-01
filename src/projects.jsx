@@ -10,6 +10,7 @@ import img6 from './assets/stopwatch.png'
 import img7 from './assets/list.png'
 import img8 from './assets/signup.png'
 import img9 from './assets/simon-game.png'
+import img11 from './assets/health-ai.png'
 import { FaCss3, FaHtml5, FaReact } from 'react-icons/fa6'
 import { RiJavascriptLine, RiTailwindCssLine } from 'react-icons/ri'
 import { CgVercel } from 'react-icons/cg'
@@ -17,33 +18,30 @@ import Footer from './Footer/Footer'
 
 
 const Projects = () => {
-    const sectionsRef = useRef([]); // Store references to all the sections
+    const sectionsRef = useRef([]);
 
-    // Add references dynamically
     const addToRefs = el => {
       if (el && !sectionsRef.current.includes(el)) {
-        sectionsRef.current.push(el); // Avoid duplicate refs
+        sectionsRef.current.push(el);
       }
     };
   
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.3, // Trigger when 20% of the element is visible
+      threshold: 0.3,
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible"); // Add class
-          observer.unobserve(entry.target); // Stop observing
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Observe each section
     sectionsRef.current.forEach(section => observer.observe(section));
 
-    // Cleanup observer on component unmount
     return () => observer.disconnect();
   }, []);
 
@@ -70,6 +68,23 @@ const Projects = () => {
                 <a href="https://blog-website-dd.vercel.app/" className='text-lg text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
               </div>
             </div>
+
+            <div className='bg-gradient-to-tr from-gray-900 to-black hover:from-black hover:to-gray-900 py-7 rounded-lg hover:border-4 hover:border-fuchsia-500 shadow-lg shadow-fuchsia-900'>
+              <div className='w-[90%] ml-[5%] rounded-lg'>
+                <img src={img11} alt="" className='w-full rounded-lg image'/>
+              </div>
+              <h1 className='pl-7 mt-5 text-3xl text-white font-bold'>Titan Health AI</h1>
+              <p className='pl-7 mt-7 pr-5 text-gray-400'>AI-powered medical chatbot that provides concise, health-focused answers and doctor referral support.</p>
+              <div className='flex mt-7 justify-between w-[90%] ml-[5%]'>
+                <div className='text-3xl text-gray-100 flex w-[40%] justify-between'>
+                  <FaReact/>
+                  <FaHtml5/>
+                  <CgVercel/>
+                </div>
+                <a href="https://blog-website-dd.vercel.app/" className='text-lg text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
+              </div>
+            </div>
+
             <div className='bg-gradient-to-tr from-gray-500 to-gray-800 hover:from-gray-800 hover:to-gray-500 py-7 rounded-lg hover:border-4 hover:border-fuchsia-500 shadow-lg shadow-fuchsia-900'>
               <div className='w-[90%] ml-[5%] rounded-lg'>
                 <img src={img2} alt="" className='w-full rounded-lg image'/>

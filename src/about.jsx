@@ -8,33 +8,30 @@ import { FaInstagram } from 'react-icons/fa6';
 import Footer from './Footer/Footer';
 
 const About = () => {
-  const sectionsRef = useRef([]); // Store references to all the sections
+  const sectionsRef = useRef([]);
   
-      // Add references dynamically
       const addToRefs = el => {
         if (el && !sectionsRef.current.includes(el)) {
-          sectionsRef.current.push(el); // Avoid duplicate refs
+          sectionsRef.current.push(el);
         }
       };
     
     useEffect(() => {
       const observerOptions = {
-        threshold: 0.4, // Trigger when 20% of the element is visible
+        threshold: 0.4,
       };
   
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible"); // Add class
-            observer.unobserve(entry.target); // Stop observing
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
           }
         });
       }, observerOptions);
   
-      // Observe each section
       sectionsRef.current.forEach(section => observer.observe(section));
   
-      // Cleanup observer on component unmount
       return () => observer.disconnect();
     }, []);
   return (
@@ -49,7 +46,7 @@ const About = () => {
         <img
           src={mypic}
           alt="Profile"
-          className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-300"
+          className="w-32 h-36 rounded-full mx-auto mb-4 border-4 border-gray-300"
         />
         <h1 className="text-2xl font-bold text-gray-800">David Davies Eghosa</h1>
         <p className="text-gray-600 mt-2">Frontend Developer & UI/UX Enthusiast</p>
