@@ -1,7 +1,11 @@
 import { useRef, useEffect } from 'react'
 import Navbar from './Navbar/Navbar'
 import mypic from './assets/my-pic.jpeg'
+import line from './assets/line.png'
+import line2 from './assets/line2.png'
 import './landing-page.css'
+import { motion } from "framer-motion";
+
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from 'react-icons/fa6';
@@ -34,6 +38,19 @@ const About = () => {
   
       return () => observer.disconnect();
     }, []);
+
+
+    const slideLeft = {
+      hidden: { opacity: 0, x: -100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1.4 } }
+    };
+
+    const slideRight = {
+      hidden: { opacity: 0, x: 100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1.4 } }
+    };
+
+
   return (
     <>
     <Navbar/>
@@ -41,12 +58,12 @@ const About = () => {
         <h2 className='text-5xl lg:text-7xl leading-snug font-bold mb-5 font-primary'>About Me</h2>
     </div>
 
-    <div className="sections flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6" ref={el => sectionsRef.current[0] = el}>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6" ref={el => sectionsRef.current[0] = el}>
       <div className="bg-white shadow-lg rounded-2xl p-8 max-w-lg text-center">
         <img
           src={mypic}
           alt="Profile"
-          className="w-32 h-36 rounded-full mx-auto mb-4 border-4 border-gray-300"
+          className="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-gray-300"
         />
         <h1 className="text-2xl font-bold text-gray-800">David Davies Eghosa</h1>
         <p className="text-gray-600 mt-2">Frontend Developer & UI/UX Enthusiast</p>
@@ -67,17 +84,49 @@ const About = () => {
         </div>
       </div>
 
-      <div className="sections bg-white shadow-lg rounded-2xl p-8 md:w-[90%] md:ml-[5%] w-[98%] ml-[1%] mt-6 text-left" ref={addToRefs}>
-        <h2 className="md:text-2xl text-xl md:mt-4 underline underline-offset-8 font-bold text-gray-800">About Me</h2>
-        <p className="text-gray-500 mt-4 md:mt-8 md:text-lg text-sm tracking-wider">
-          My name is <strong>David Davies Eghosa</strong>, and I’m a dedicated <strong>Frontend Developer</strong> specializing in <strong>JavaScript, React, and TypeScript</strong>. I’m currently a <strong>200-level Computer Science student at the University of Lagos</strong>. My passion for technology and web development has led me to exciting opportunities, including a <strong>frontend development internship at Zeinny Crafts</strong> under the <strong>University of Lagos Afretec Network</strong>. Additionally, in <strong>January 2025</strong>, I interned at <strong>Prodigy Infotech</strong>, where I worked on real-life projects, gaining hands-on experience in building scalable applications and collaborating with teams to develop innovative solutions.
-        </p>
-        <p className="text-gray-500 mt-4 md:text-lg text-sm tracking-wider">
-          My journey as a developer has been marked by both challenges and growth. Early on, I found <strong>state management, debugging, and building scalable applications</strong> quite daunting. However, through <strong>persistence, countless hours of practice, and leveraging resources</strong> such as online courses, documentation, and community support, I was able to overcome these challenges. These experiences reinforced the importance of <strong>resilience, adaptability, and problem-solving</strong>, which now define my approach to development.
-        </p>
-        <p className="text-gray-500 mt-4 md:text-lg text-sm tracking-wider">
-          I am deeply passionate about creating <strong>seamless user experiences</strong> and writing <strong>clean, efficient, and maintainable code</strong>. I thrive in collaborative environments and continuously seek opportunities to learn and stay up-to-date with <strong>industry trends and best practices</strong>. For me, being a developer is more than just writing code—it’s about <strong>solving problems, crafting meaningful digital experiences, and making a lasting impact in the tech community</strong>.
-        </p>
+      <div className="sections flex justify-between items-center px-8 w-full mt-24 text-left" ref={addToRefs}>
+          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg px-10 py-12 md:px-20 md:py-32'>
+            <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
+              About Me
+            </h2>
+            <p className="text-gray-400 mt-4 md:mt-8 md:text-[15px] text-[13px] tracking-normal md:tracking-wider">
+              My name is David Davies Eghosa, and I’m a dedicated Frontend Developer specializing in JavaScript, React, and TypeScript. I’m currently a 200-level Computer Science student at the University of Lagos.
+            </p>
+          </motion.div>
+          <div className='h-full w-2/5 md:block hidden'>
+            <img src={line} alt="" className='w-full h-full' />
+          </div>
+      </div>
+
+      <div className="sections flex justify-between items-center px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
+          <div className='h-full w-2/5 items-center md:flex hidden'>
+            <img src={line2} alt="" className='w-full h-full' />
+          </div>
+          <motion.div variants={slideRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}  className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-10 py-12 md:px-20 md:py-32'>
+            <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
+              Work Experience
+            </h2>
+            <p className="text-gray-400 mt-4 md:mt-8 md:text-[15px] text-sm text-[13px] tracking-normal md:tracking-wider">
+              My passion for technology and web development has led me to exciting opportunities, including a frontend development internship at Zeinny Crafts under the University of Lagos Afretec Network. Additionally, in January 2025, I interned at Prodigy Infotech, where I worked on real-life projects, gaining hands-on experience in building scalable applications and collaborating with teams to develop innovative solutions.
+            </p>
+            <p className="text-gray-400 mt-4 md:mt-8 md:text-[15px] text-sm text-[13px] tracking-normal md:tracking-wider">
+              My journey as a developer has been marked by both challenges and growth. Early on, I found state management, debugging, and building scalable applications quite daunting. However, through persistence, countless hours of practice, and leveraging resources such as online courses, documentation, and community support, I was able to overcome these challenges. These experiences reinforced the importance of resilience, adaptability, and problem-solving.
+            </p>
+          </motion.div>
+      </div>
+
+      <div className="sections flex justify-between items-center px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
+          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-10 py-12 md:px-20 md:py-32'>
+            <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
+              Passion & Purpose
+            </h2>
+            <p className="text-gray-400 mt-4 md:mt-8 md:text-[15px] text-[13px] tracking-normal text-sm md:tracking-wider">
+              I am deeply passionate about creating seamless user experiences and writing clean, efficient, and maintainable code.
+            </p>
+          </motion.div>
+          <div className='w-2/5 h-96 md:block hidden'>
+            <img src={line} alt="" className='w-full h-full'/>
+          </div>
       </div>
     </div>
     <Footer/>
