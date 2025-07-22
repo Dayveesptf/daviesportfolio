@@ -84,8 +84,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="sections flex justify-between items-center px-8 w-full mt-24 text-left" ref={addToRefs}>
-          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg px-10 py-12 md:px-20 md:py-32'>
+      <div className="sections flex justify-between items-center md:px-8 w-full mt-24 text-left" ref={addToRefs}>
+          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg px-8 py-8 md:px-20 md:py-32'>
             <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
               About Me
             </h2>
@@ -98,11 +98,11 @@ const About = () => {
           </div>
       </div>
 
-      <div className="sections flex justify-between items-center px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
+      <div className="sections flex justify-between items-center md:px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
           <div className='h-full w-2/5 items-center md:flex hidden'>
             <img src={line2} alt="" className='w-full h-full' />
           </div>
-          <motion.div variants={slideRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}  className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-10 py-12 md:px-20 md:py-32'>
+          <motion.div variants={slideRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}  className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-8 py-8 md:px-20 md:py-32'>
             <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
               Work Experience
             </h2>
@@ -115,8 +115,8 @@ const About = () => {
           </motion.div>
       </div>
 
-      <div className="sections flex justify-between items-center px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
-          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-10 py-12 md:px-20 md:py-32'>
+      <div className="sections flex justify-between items-center md:px-8 w-full mt-4 md:mt-14 lg:mt-24 text-left" ref={addToRefs}>
+          <motion.div variants={slideLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className='w-full md:w-3/5 bg-white rounded-3xl shadow-lg  px-8 py-8 md:px-20 md:py-32'>
             <h2 className="md:text-3xl text-xl md:mt-4 font-bold text-gray-600">
               Passion & Purpose
             </h2>
