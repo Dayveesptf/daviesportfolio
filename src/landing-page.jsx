@@ -5,11 +5,12 @@ import './landing-page.css'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import img1 from './assets/blog.png'
-import img2 from './assets/landing-page.png'
-import img3 from './assets/multi-step.png'
+import img12 from './assets/retail.png'
+import img13 from './assets/contractly.png'
 import { FaHtml5, FaReact } from 'react-icons/fa6'
 import { RiTailwindCssLine } from 'react-icons/ri'
 import { CgVercel } from 'react-icons/cg'
+import './index.css'
 
 
 function LandingPage() {
@@ -92,51 +93,54 @@ function LandingPage() {
       <h1 className='text-center text-2xl md:text-3xl lg:text-4xl mt-24 md:mt-40 mb-6 md:mb-12 w-5/6 mx-auto'>A small selection of <span className='text-gray-500'>recent projects</span></h1>
 
       <div className='py-6 gap-3 lg:gap-20 sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70%] ml-[15%] md:w-[80%] md:ml-[10%] lg:w-[90%] lg:ml-[5%]' ref={addToRefs}>
-        <div className='bg-gradient-to-tr from-gray-900 to-black py-12 rounded-3xl'>
-          <div className='w-[90%] ml-[5%] rounded-lg'>
-            <img src={img1} alt="" className='w-full rounded-lg'/>
+        <div className='group relative project-card p-8 overflow-hidden'>
+          <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
+            <img src={img1} alt="" className='w-full h-48 object-cover'/>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          <h1 className='pl-7 mt-5 text-2xl text-white font-bold'>Blog Website</h1>
-          <p className='pl-7 mt-7 pr-5 text-gray-400 text-sm'>Explore this blog website created with react, using local data to display information</p>
-          <div className='flex mt-7 justify-between w-[100%] px-7 mx-auto'>
-            <div className='text-xl text-gray-100 flex w-[40%] justify-between'>
+          <h1 className='text-2xl mb-4 font-heading font-bold text-foreground'>Blog Website</h1>
+          <p className='text-sm leading-relaxed text-muted-foreground'>Explore this blog website created with react, using local data to display information</p>
+          <div className='flex mt-7 justify-between w-[100%] px-7 mx-auto items-center'>
+            <div className='text-xl text-gray-800 flex w-[40%] justify-between'>
               <FaReact/>
               <RiTailwindCssLine/>
               <FaHtml5/>
               <CgVercel/>
             </div>
-            <a href="https://blog-website-dd.vercel.app/" className='text-sm text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
+            <a href="https://blog-website-dd.vercel.app/" className=' text-black px-3 py-2 rounded-sm bg-gray-200 hover:bg-gray-600 hover:text-white border-gray-300 transition border'>Check it out</a>
           </div>
         </div>
-        <div className='bg-gradient-to-tr from-gray-500 to-gray-800 py-12 rounded-3xl'>
-          <div className='w-[90%] ml-[5%] rounded-lg'>
-            <img src={img2} alt="" className='w-full rounded-lg'/>
+        <div className='group relative project-card p-8 overflow-hidden'>
+          <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
+            <img src={img13} alt="" className='w-full h-48 object-cover'/>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          <h1 className='pl-7 mt-5 text-2xl text-white font-bold'>Landing Page</h1>
-          <p className='pl-7 mt-7 pr-5 text-sm text-gray-400'>Explore this basic landing page created with react with basic animations</p>
-          <div className='flex mt-7 justify-between w-[100%] mx-auto px-7'>
-            <div className='text-xl text-gray-100 flex w-[40%] justify-between'>
+          <h1 className='text-2xl mb-4 font-heading font-bold text-foreground'>Contractly</h1>
+          <p className='text-sm leading-relaxed text-muted-foreground'>Upload your contract documents and get instant AI-powered analysis for key terms, risks, and insights.</p>
+          <div className='flex mt-7 justify-between w-[100%] mx-auto px-7 items-center'>
+            <div className='text-xl text-gray-800 flex w-[40%] justify-between'>
               <FaReact/>
               <RiTailwindCssLine/>
               <FaHtml5/>
               <CgVercel/>
             </div>
-            <a href="https://prodigy-wd-01-landingpage.vercel.app/" className='text-sm text-gray-900 underline underline-offset-4 hover:text-white'>Check it out</a>
+            <a href="https://contractly-kappa.vercel.app/" className=' text-black px-3 py-2 rounded-sm bg-gray-200 hover:bg-gray-600 hover:text-white border-gray-300 transition border'>Check it out</a>
           </div>
         </div>
-        <div className='bg-gradient-to-tr from-gray-900 to-black py-12 rounded-3xl'>
-          <div className='w-[90%] ml-[5%] rounded-lg'>
-            <img src={img3} alt="" className='w-full rounded-lg'/>
+        <div className='group relative project-card p-8 overflow-hidden'>
+          <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
+            <img src={img12} alt="" className='w-full h-48 object-cover'/>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          <h1 className='pl-7 mt-5 text-2xl text-white font-bold'>Multi Step Form</h1>
-          <p className='pl-7 mt-7 pr-5 text-gray-400 text-sm'>Explore this blog website created with react, managing states and inputs taken from users</p>
-          <div className='flex mt-7 justify-between w-[100%] mx-auto px-7'>
-            <div className='text-xl text-gray-100 flex w-[40%] justify-between'>
+          <h1 className='text-2xl mb-4 font-heading font-bold text-foreground'>Retail-Radar</h1>
+          <p className='text-sm leading-relaxed text-muted-foreground'>This project identifies retail store clusters and areas of high store density within a city, providing valuable insights for entrepreneurs, investors, and business owners. </p>
+          <div className='flex mt-7 justify-between w-[100%] mx-auto px-7 items-center'>
+            <div className='text-xl text-gray-800 flex w-[40%] justify-between'>
               <FaReact/>
               <FaHtml5/>
               <CgVercel/>
             </div>
-            <a href="https://multi-step-form-nu-green.vercel.app/" className='text-sm text-gray-700 underline underline-offset-4 hover:text-white'>Check it out</a>
+            <a href="https://retail-radar-dd.vercel.app/" className=' text-black px-3 py-2 rounded-sm bg-gray-200 hover:bg-gray-600 hover:text-white border-gray-300 transition border'>Check it out</a>
           </div>
         </div>
       </div>

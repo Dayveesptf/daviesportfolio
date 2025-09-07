@@ -1,3 +1,178 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* white */
+    --foreground: 0 0% 10%;  /* near black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 30%;  /* dark gray */
+    --primary-foreground: 0 0% 100%; /* white */
+
+    --secondary: 0 0% 95%; /* light gray */
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 92%; 
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 0% 40%; /* mid-gray instead of red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 0 0% 30%;
+
+    --radius: 0.75rem;
+
+    /* Design System */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 40%), hsl(0 0% 50%));
+    --hero-gradient-secondary: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 15%));
+    --card-gradient-featured: linear-gradient(135deg, hsl(0 0% 30%), hsl(0 0% 45%));
+    --card-gradient-premium: linear-gradient(135deg, hsl(0 0% 10%), hsl(0 0% 20%));
+    --card-shadow: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
+    --card-shadow-hover: 0 20px 40px -10px hsl(0 0% 0% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glow-primary: 0 0 40px hsl(0 0% 30% / 0.3);
+
+    /* Typography */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 0 0% 15%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 0 0% 40%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;   /* near black */
+    --foreground: 0 0% 95%;  /* near white */
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 0% 40%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 70%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .hero-gradient-secondary {
+    background: var(--hero-gradient-secondary);
+  }
+
+  .card-gradient-featured {
+    background: var(--card-gradient-featured);
+  }
+
+  .card-gradient-premium {
+    background: var(--card-gradient-premium);
+  }
+
+  .project-card {
+    @apply bg-card rounded-2xl transition-all duration-300 hover:scale-[1.02];
+    box-shadow: var(--card-shadow);
+  }
+
+  .project-card:hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .project-card-featured {
+    @apply text-white;
+    background: var(--card-gradient-featured);
+    box-shadow: var(--glow-primary);
+  }
+
+  .project-card-premium {
+    @apply text-white;
+    background: var(--card-gradient-premium);
+  }
+
+  .tech-icon {
+    @apply w-6 h-6 transition-all duration-200 hover:scale-110;
+  }
+
+  .project-link {
+    @apply relative overflow-hidden px-4 py-2 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .project-link::before {
+    content: '';
+    @apply absolute inset-0 bg-primary transform scale-x-0 origin-left transition-transform duration-300;
+  }
+
+  .project-link:hover::before {
+    @apply scale-x-100;
+  }
+
+  .project-link span {
+    @apply relative z-10;
+  }
+
+  .fade-in-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-up.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
