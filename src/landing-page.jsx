@@ -92,7 +92,7 @@ function LandingPage() {
 
       <h1 className='text-center text-2xl md:text-3xl lg:text-4xl mt-24 md:mt-40 mb-6 md:mb-12 w-5/6 mx-auto'>A small selection of <span className='text-gray-500'>recent projects</span></h1>
 
-      <div className='py-6 gap-3 lg:gap-20 sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70%] ml-[15%] md:w-[80%] md:ml-[10%] lg:w-[90%] lg:ml-[5%]' ref={addToRefs}>
+      <div className='py-6 gap-3 lg:gap-20 sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] ml-[5%] md:w-[80%] md:ml-[10%] lg:w-[90%] lg:ml-[5%]' ref={addToRefs}>
         <div className='group relative project-card p-8 overflow-hidden'>
           <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
             <img src={img1} alt="" className='w-full h-48 object-cover'/>
