@@ -11,6 +11,13 @@ import stopwatch from './assets/stopwatch.png'
 import todoList from './assets/list.png'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
+import { FaGamepad, FaHtml5, FaReact } from 'react-icons/fa6'
+import { SiTailwindcss } from 'react-icons/si'
+import { CgVercel } from 'react-icons/cg'
+import { AiFillApi } from 'react-icons/ai'
+import { BiData, BiTimer } from 'react-icons/bi'
+import { GrFormCheckmark } from 'react-icons/gr'
+import { TbApi } from 'react-icons/tb'
 
 const Projects = () => {
   const sectionsRef = useRef([]);
@@ -132,17 +139,16 @@ const Projects = () => {
 
   const TechIcon = ({ tech }) => {
     const iconMap = {
-      React: "⚛️",
-      Tailwind: "🎨",
-      HTML: "🌐",
-      Vercel: "▲",
-      AI: "🤖",
-      Data: "📊",
-      Forms: "📋",
-      Game: "🎮",
-      API: "🔗",
-      Timer: "⏱️",
-      State: "📝"
+      React: <FaReact />,
+      Tailwind: <SiTailwindcss />,
+      HTML: <FaHtml5 />,
+      Vercel: <CgVercel />,
+      AI: <AiFillApi />,
+      Data: <BiData />,
+      Forms: <GrFormCheckmark />,
+      Game: <FaGamepad />,
+      API: <TbApi />,
+      Timer: <BiTimer />,
     };
 
     return (
