@@ -11,8 +11,8 @@ import stopwatch from './assets/stopwatch.png'
 import todoList from './assets/list.png'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
-import { FaGamepad, FaHtml5, FaReact } from 'react-icons/fa6'
-import { SiTailwindcss } from 'react-icons/si'
+import { FaGamepad, FaHtml5, FaReact, } from 'react-icons/fa6'
+import { SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { CgVercel } from 'react-icons/cg'
 import { AiFillApi } from 'react-icons/ai'
 import { BiData, BiTimer } from 'react-icons/bi'
@@ -84,10 +84,10 @@ const Projects = () => {
     {
       id: 5,
       title: "Landing Page",
-      description: "Explore this modern landing page created with React featuring smooth animations and responsive design.",
+      description: "Explore this modern landing page created with Next.js about Krea AI, featuring mordern styles and responsive design.",
       image: landingPage,
       link: "https://prodigy-wd-01-landingpage.vercel.app/",
-      tech: ["React", "Tailwind", "HTML", "Vercel"],
+      tech: ["Typescript", "Tailwind", "HTML", "Vercel"],
       featured: false,
       premium: false
     },
@@ -149,6 +149,7 @@ const Projects = () => {
       Game: <FaGamepad />,
       API: <TbApi />,
       Timer: <BiTimer />,
+      Typescript: <SiTypescript />
     };
 
     return (
