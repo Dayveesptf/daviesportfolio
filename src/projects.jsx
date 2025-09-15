@@ -86,7 +86,7 @@ const Projects = () => {
       title: "Landing Page",
       description: "Explore this modern landing page created with Next.js about Krea AI, featuring mordern styles and responsive design.",
       image: landingPage,
-      link: "https://prodigy-wd-01-landingpage.vercel.app/",
+      link: "https://krea-ai-landing-page.vercel.app/",
       tech: ["Typescript", "Tailwind", "HTML", "Vercel"],
       featured: false,
       premium: false
