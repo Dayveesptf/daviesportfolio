@@ -30,7 +30,7 @@ const Projects = () => {
 
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.1,
+      threshold: 0.05,
       rootMargin: '0px 0px -50px 0px'
     };
 
@@ -163,8 +163,8 @@ const Projects = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       {/* Hero Section */}
-      <header className="relative pt-32 pb-24 md:pt-48 md:pb-36 hero-gradient overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <header className="relative pt-44 pb-32 md:pt-48 md:pb-36 hero-gradient overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float"></div>
           <div className="absolute top-40 right-20 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
@@ -187,8 +187,8 @@ const Projects = () => {
       </header>
 
       {/* Projects Grid */}
-      <main className="py-20 px-4">
-        <div className="container mx-auto max-w-7xl">
+      <main className="py-20 px-4 bg-black">
+        <div className="container mx-auto md:w-[80rem] w-[80%]">
           <div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-up"
             ref={addToRefs}
@@ -196,11 +196,11 @@ const Projects = () => {
             {projects.map((project, index) => (
               <article
                 key={project.id}
-                className="group relative project-card p-8 overflow-hidden"
+                className="group relative project-card p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Background decoration */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-2xl"></div>
+                <div className="absolute top-0 right-0 w-52 h-52 bg-gradient-to-br from-[#dcdcdcb1] to-transparent rounded-full blur-2xl"></div>
                 
                 {/* Project Image */}
                 <div className="relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500">
@@ -215,7 +215,7 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-heading font-bold text-foreground">
+                  <h3 className="text-2xl mb-4 font-heading font-bold text-white">
                     {project.title}
                   </h3>
                   
@@ -224,7 +224,7 @@ const Projects = () => {
                   </p>
 
                   {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-3 text-gray-200">
                     {project.tech.map((tech, techIndex) => (
                       <TechIcon key={techIndex} tech={tech} />
                     ))}
@@ -236,7 +236,7 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link inline-block pg-primary/10 text-primary hover:bg-primary hover:text-white border border-current"
+                      className="project-link inline-block pg-primary/10 text-gray-500 hover:bg-primary hover:text-white border border-current"
                     >
                       <span>View Project</span>
                     </a>
@@ -249,7 +249,7 @@ const Projects = () => {
       </main>
 
       {/* Call to Action */}
-      <section className="py-20 mb-[-9%] md:mb-[-5%] lg:mb-[-3%] px-4 hero-gradient">
+      <section className="py-20 mb-[-9%] md:mb-[-5%] lg:mb-[-3%] px-4 bg-black pt-20">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-2xl md:text-6xl font-heading font-bold text-white mb-6">
             Ready to Build Something Amazing?
@@ -259,7 +259,7 @@ const Projects = () => {
           </p>
           <a
             href="mailto:dtechservices2@gmail.com"
-            className="inline-block px-8 py-4 bg-white text-primary font-medium rounded-xl hover:bg-white/90 transform hover:scale-105 transition-all duration-300"
+            className="inline-block px-8 py-4 bg-[#6c6c6c37] text-gray-300 font-medium rounded-2xl hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
           >
             Get In Touch
           </a>
