@@ -163,7 +163,7 @@ const Projects = () => {
     <div className="min-h-screen img-background">
       <Navbar />
       {/* Hero Section */}
-      <header className="relative pt-52 pb-32 md:pt-48 md:pb-36 overflow-hidden">
+      <header className="relative pt-64 pb-32 md:pt-48 md:pb-36 overflow-hidden">
         <div className="relative z-10 mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-heading font-bold text-white mb-6 animate-fade-in-up">
             My Projects
