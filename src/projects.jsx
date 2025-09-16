@@ -160,18 +160,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen img-background">
       <Navbar />
       {/* Hero Section */}
-      <header className="relative pt-44 pb-32 md:pt-48 md:pb-36 hero-gradient overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black"></div>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float"></div>
-          <div className="absolute top-40 right-20 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-white/5 rounded-full blur-2xl animate-float" style={{animationDelay: '2s'}}></div>
-        </div>
-        
-        <div className="relative z-10 container mx-auto px-4 text-center">
+      <header className="relative pt-44 pb-32 md:pt-48 md:pb-36 overflow-hidden">
+        <div className="relative z-10 mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-heading font-bold text-white mb-6 animate-fade-in-up">
             My Projects
           </h1>
@@ -187,7 +180,7 @@ const Projects = () => {
       </header>
 
       {/* Projects Grid */}
-      <main className="py-20 px-4 bg-black">
+      <main className="py-20 px-4">
         <div className="container mx-auto md:w-[80rem] w-[80%]">
           <div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-up"
@@ -196,7 +189,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <article
                 key={project.id}
-                className="group relative project-card p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl"
+                className="glass relative p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 {/* Background decoration */}
@@ -219,7 +212,7 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="text-sm leading-relaxed text-gray-400">
                     {project.description}
                   </p>
 
@@ -236,7 +229,7 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link inline-block pg-primary/10 text-gray-500 hover:bg-primary hover:text-white border border-current"
+                      className="project-link inline-block pg-primary/10 text-gray-200 hover:bg-primary hover:text-white border border-current"
                     >
                       <span>View Project</span>
                     </a>

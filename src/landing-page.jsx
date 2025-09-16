@@ -93,13 +93,13 @@ function LandingPage() {
       <h1 className='text-center text-2xl md:text-3xl lg:text-4xl mt-24 md:mt-40 mb-6 md:mb-12 w-5/6 mx-auto text-white'>A small selection of <span className='text-gray-500'>recent projects</span></h1>
 
       <div className='py-6 gap-5 lg:gap-20 sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto w-[70%] ml-[15%] md:w-[80%] md:ml-[10%] lg:w-[90%] lg:ml-[5%]' ref={addToRefs}>
-        <div className='group relative project-card p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
+        <div className='glass relative p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
           <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
             <img src={img1} alt="" className='w-full h-48 object-cover'/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <h1 className='text-2xl mb-4 font-heading font-bold text-white'>Blog Website</h1>
-          <p className='text-sm leading-relaxed text-muted-foreground'>Explore this blog website created with react, using local data to display information</p>
+          <p className='text-sm leading-relaxed text-gray-400'>Explore this blog website created with react, using local data to display information</p>
           <div className='flex mt-7 justify-between w-[100%] px-7 mx-auto items-center'>
             <div className='text-xl text-gray-200 flex w-[40%] justify-between'>
               <FaReact/>
@@ -110,13 +110,13 @@ function LandingPage() {
             <a href="https://blog-website-dd.vercel.app/" className=' text-gray-200 px-3 py-2 rounded-md bg-white/10 hover:bg-white/30 hover:text-black transition'>Check it out</a>
           </div>
         </div>
-        <div className='group relative project-card p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
+        <div className='glass relative p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
           <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
             <img src={img13} alt="" className='w-full h-48 object-cover'/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <h1 className='text-2xl mb-4 font-heading font-bold text-white'>Contractly</h1>
-          <p className='text-sm leading-relaxed text-muted-foreground'>Upload your contract documents and get instant AI-powered analysis for key terms, risks, and insights.</p>
+          <p className='text-sm leading-relaxed text-gray-400'>Upload your contract documents and get instant AI-powered analysis for key terms, risks, and insights.</p>
           <div className='flex mt-7 justify-between w-[100%] mx-auto px-7 items-center'>
             <div className='text-xl text-gray-200 flex w-[40%] justify-between'>
               <FaReact/>
@@ -127,13 +127,13 @@ function LandingPage() {
             <a href="https://contractly-kappa.vercel.app/" className=' text-gray-200 px-3 py-2 rounded-md bg-white/10 hover:bg-white/30 hover:text-black transition'>Check it out</a>
           </div>
         </div>
-        <div className='group relative project-card p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
+        <div className='glass relative p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
           <div className='relative mb-6 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-500'>
             <img src={img12} alt="Retail Radar preview" className='w-full h-48 object-cover'/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <h1 className='text-2xl mb-4 font-heading font-bold text-white'>Retail-Radar</h1>
-          <p className='text-sm leading-relaxed text-muted-foreground'>This project identifies retail store clusters and areas of high store density within a city, providing valuable insights for entrepreneurs, investors, and business owners.</p>
+          <p className='text-sm leading-relaxed text-gray-400'>This project identifies retail store clusters and areas of high store density within a city, providing valuable insights for entrepreneurs, investors, and business owners.</p>
           <div className='flex mt-7 justify-between w-full mx-auto px-7 items-center'>
             <div className='text-xl text-gray-200 flex w-[40%] justify-between'>
               <FaReact/>
