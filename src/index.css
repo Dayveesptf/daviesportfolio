@@ -216,7 +216,7 @@
     linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.795)), 
     url("./assets/background.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

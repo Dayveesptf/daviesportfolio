@@ -229,7 +229,7 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="project-link inline-block pg-primary/10 text-gray-200 hover:bg-primary hover:text-white border border-current"
+                      className="project-link inline-block pg-primary/10 text-gray-200 hover:bg-black hover:text-white border border-current"
                     >
                       <span>View Project</span>
                     </a>
@@ -242,7 +242,7 @@ const Projects = () => {
       </main>
 
       {/* Call to Action */}
-      <section className="py-20 mb-[-9%] md:mb-[-5%] lg:mb-[-3%] px-4 bg-black pt-20">
+      <section className="py-20 mb-[-9%] md:mb-[-5%] lg:mb-[-3%] px-4 pt-20">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-2xl md:text-6xl font-heading font-bold text-white mb-6">
             Ready to Build Something Amazing?
