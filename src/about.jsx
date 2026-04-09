@@ -216,10 +216,6 @@ const About = () => {
                         <p className="text-gray-500">Projects Completed</p>
                         <p className="text-white text-2xl font-bold">15+</p>
                       </div>
-                      <div>
-                        <p className="text-gray-500">Happy Clients</p>
-                        <p className="text-white text-2xl font-bold">10+</p>
-                      </div>
                     </div>
                   </div>
                 </div>
