@@ -11,6 +11,8 @@ import stopwatch from './assets/stopwatch.png'
 import todoList from './assets/list.png'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
+import laundromat from './assets/laundromat.png'
+import creditRiskPro from './assets/credit-risk-pro.png'
 import { FaGamepad, FaHtml5, FaReact, } from 'react-icons/fa6'
 import { SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { CgVercel } from 'react-icons/cg'
@@ -51,12 +53,13 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Blog Website",
-      description: "Explore this blog website created with React, using local data to display information with modern design patterns.",
-      image: blogWebsite,
-      link: "https://blog-website-dd.vercel.app/",
-      tech: ["React", "Tailwind", "HTML", "Vercel"],
+      title: "Retail-Radar",
+      description: "This project identifies retail store clusters and areas of high store density within a city, providing valuable insights for entrepreneurs.",
+      image: retailRadar,
+      link: "https://retail-radar-dd.vercel.app/",
+      tech: ["React", "Data", "HTML", "Vercel"],
     },
+    
     {
       id: 2,
       title: "Titan Health AI",
@@ -67,6 +70,14 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Viva Laudromat",
+      description: "A cloud-based management system that digitized a university laundromat's manual operations, eliminating paper logs and automating resource tracking.",
+      image: laundromat,
+      link: "https://viva-laundromat.vercel.app/",
+      tech: ["React", "Tailwind", "Vercel"],
+    },
+    {
+      id: 4,
       title: "Contractly",
       description: "Upload your contract documents and get instant AI-powered analysis for key terms, risks, and insights.",
       image: contractly,
@@ -74,15 +85,25 @@ const Projects = () => {
       tech: ["React", "Tailwind", "AI", "Vercel"],
     },
     {
-      id: 4,
-      title: "Retail-Radar",
-      description: "This project identifies retail store clusters and areas of high store density within a city, providing valuable insights for entrepreneurs.",
-      image: retailRadar,
-      link: "https://retail-radar-dd.vercel.app/",
-      tech: ["React", "Data", "HTML", "Vercel"],
+      id: 5,
+      title: "Blog Website",
+      description: "Explore this blog website created with React, using local data to display information with modern design patterns.",
+      image: blogWebsite,
+      link: "https://blog-website-dd.vercel.app/",
+      tech: ["React", "Tailwind", "HTML", "Vercel"],
     },
     {
-      id: 5,
+      id: 6,
+      title: "Credit risk pro",
+      description: "A React-based user portal showing credit scores, verification progress (NIN/BVN/Business), and loan application status with quick-action workflows.",
+      image: creditRiskPro,
+      link: "https://drive.google.com/file/d/12feCjQxo-pqXdkEQCdoGy18w408tnkvg/view?usp=sharing",
+      tech: ["Typescript", "Tailwind", "HTML", "React"],
+      featured: false,
+      premium: false
+    },
+    {
+      id: 7,
       title: "Landing Page",
       description: "Explore this modern landing page created with Next.js about Krea AI, featuring mordern styles and responsive design.",
       image: landingPage,
@@ -92,7 +113,7 @@ const Projects = () => {
       premium: false
     },
     {
-      id: 6,
+      id: 8,
       title: "Multi Step Form",
       description: "Advanced form handling with React, managing complex states and user inputs across multiple steps.",
       image: multiStepForm,
@@ -100,7 +121,7 @@ const Projects = () => {
       tech: ["React", "Forms", "HTML", "Vercel"],
     },
     {
-      id: 7,
+      id: 9,
       title: "Tic-Tac-Toe",
       description: "Interactive game of X and O created with React, playable between two users or against computer AI.",
       image: ticTacToe,
@@ -108,7 +129,7 @@ const Projects = () => {
       tech: ["React", "Game", "HTML", "Vercel"],
     },
     {
-      id: 8,
+      id: 10,
       title: "Weather App",
       description: "Real-time weather application managing states and user inputs to display weather details for cities worldwide.",
       image: weatherApp,
@@ -116,7 +137,7 @@ const Projects = () => {
       tech: ["React", "API", "Tailwind", "Vercel"],
     },
     {
-      id: 9,
+      id: 11,
       title: "Stopwatch",
       description: "Professional stopwatch with start, pause, reset, stop and lap functionality. Perfect for workouts and sports.",
       image: stopwatch,
@@ -126,7 +147,7 @@ const Projects = () => {
       premium: false
     },
     {
-      id: 10,
+      id: 12,
       title: "To-Do List",
       description: "Powerful task management application with priority ordering, completion tracking, and organized workflow.",
       image: todoList,

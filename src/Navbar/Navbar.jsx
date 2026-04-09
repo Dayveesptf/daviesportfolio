@@ -28,7 +28,7 @@ import { Link } from 'react-router-dom';
      <header className={`text-black shadow-bottom-only fixed top-0 left-0 right-0 z-30 shadow-gray-800 transition-colors duration-300 ease-in-out ${isScrolled ? "bg-gray-700" : "bg-gray-800"}`}>
         <nav className='md:px-0 px-10 py-5 max-w-7xl mx-auto flex justify-between items-center'>
             <div className='flex gap-3 items-center'>
-                <a href="/" className='text-2xl font-bold text-gray-500'>DAVIES<span className='text-gray-200'> /> </span></a>
+                <a href="/" className='text-2xl font-bold text-gray-500'>DAVIES<span className='text-gray-200'> /&gt; </span></a>
             </div>
             {/* nav-items for lg devices */}
             <ul className='md:flex md:gap-6 lg:gap-10 text-lg hidden'>
