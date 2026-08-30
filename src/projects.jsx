@@ -7,6 +7,7 @@ import landingPage from './assets/landing-page.png'
 import multiStepForm from './assets/multi-step.png'
 import ticTacToe from './assets/tic-tac-toe.png'
 import weatherApp from './assets/weather-app.png'
+import dTech from './assets/d-tech.png'
 import stopwatch from './assets/stopwatch.png'
 import todoList from './assets/list.png'
 import Navbar from './Navbar/Navbar'
@@ -70,6 +71,14 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "D-Tech Coding Platform",
+      description: "An online coding platform that offers interactive tutorials and real-time tests and exercise features for aspiring developers.",
+      image: dTech,
+      link: "https://d-tech-services.vercel.app/",
+      tech: ["React", "Tailwind", "Vercel", "Data", "API"],
+    },
+    {
+      id: 4,
       title: "Viva Laudromat",
       description: "A cloud-based management system that digitized a university laundromat's manual operations, eliminating paper logs and automating resource tracking.",
       image: laundromat,
@@ -77,7 +86,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "Vercel"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Contractly",
       description: "Upload your contract documents and get instant AI-powered analysis for key terms, risks, and insights.",
       image: contractly,
@@ -85,7 +94,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "AI", "Vercel"],
     },
     {
-      id: 5,
+      id: 6,
       title: "Blog Website",
       description: "Explore this blog website created with React, using local data to display information with modern design patterns.",
       image: blogWebsite,
@@ -93,7 +102,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "HTML", "Vercel"],
     },
     {
-      id: 6,
+      id: 7,
       title: "Credit risk pro",
       description: "A React-based user portal showing credit scores, verification progress (NIN/BVN/Business), and loan application status with quick-action workflows.",
       image: creditRiskPro,
@@ -103,7 +112,7 @@ const Projects = () => {
       premium: false
     },
     {
-      id: 7,
+      id: 8,
       title: "Landing Page",
       description: "Explore this modern landing page created with Next.js about Krea AI, featuring mordern styles and responsive design.",
       image: landingPage,
@@ -113,7 +122,7 @@ const Projects = () => {
       premium: false
     },
     {
-      id: 8,
+      id: 9,
       title: "Multi Step Form",
       description: "Advanced form handling with React, managing complex states and user inputs across multiple steps.",
       image: multiStepForm,
@@ -121,7 +130,7 @@ const Projects = () => {
       tech: ["React", "Forms", "HTML", "Vercel"],
     },
     {
-      id: 9,
+      id: 10,
       title: "Tic-Tac-Toe",
       description: "Interactive game of X and O created with React, playable between two users or against computer AI.",
       image: ticTacToe,
@@ -129,7 +138,7 @@ const Projects = () => {
       tech: ["React", "Game", "HTML", "Vercel"],
     },
     {
-      id: 10,
+      id: 11,
       title: "Weather App",
       description: "Real-time weather application managing states and user inputs to display weather details for cities worldwide.",
       image: weatherApp,
@@ -137,7 +146,7 @@ const Projects = () => {
       tech: ["React", "API", "Tailwind", "Vercel"],
     },
     {
-      id: 11,
+      id: 12,
       title: "Stopwatch",
       description: "Professional stopwatch with start, pause, reset, stop and lap functionality. Perfect for workouts and sports.",
       image: stopwatch,
@@ -147,7 +156,7 @@ const Projects = () => {
       premium: false
     },
     {
-      id: 12,
+      id: 13,
       title: "To-Do List",
       description: "Powerful task management application with priority ordering, completion tracking, and organized workflow.",
       image: todoList,
