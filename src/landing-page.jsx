@@ -157,10 +157,10 @@ function LandingPage() {
           <hr className='mt-6 w-[20%] ml-[40%]'/>
         </div>
         <div className='md:w-[25%] md:py-20 bg-[#4343434c] rounded-3xl w-[100%] shadow-bottom-only shadow-gray-600 border-solid border-2 py-6 text-center'>
-          <h1 className='text-xs md:text-sm underline underline-offset-2 text-gray-400'>Frontend Engineer Intern</h1>
-          <h1 className='mt-2 md:text-xl md:mt-5 text-lg tracking-normal font-bold text-white'>Prodigy InfoTech</h1>
+          <h1 className='text-xs md:text-sm underline underline-offset-2 text-gray-400'>Fullstack Developer</h1>
+          <h1 className='mt-2 md:text-xl md:mt-5 text-lg tracking-normal font-bold text-white'>Plothive</h1>
           <hr className='mt-6 w-[20%] ml-[40%]'/>
-          <p className='mt-3 md:text-sm text-[12px] w-5/6 mx-auto text-gray-400'>Completed assigned tasks such as a landing page, weather app and a stopwatch, using React.js</p>
+          <p className='mt-3 md:text-sm text-[12px] w-5/6 mx-auto text-gray-400'>Developed full-stack features using React and Node.js, building responsive user interfaces and robust backend solutions.</p>
           <hr className='mt-6 w-[20%] ml-[40%]'/>
         </div>
       </div>
