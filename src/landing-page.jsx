@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import './landing-page.css'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
-import img1 from './assets/blog.png'
+import img1 from './assets/d-tech.png'
 import img12 from './assets/retail.png'
 import img13 from './assets/contractly.png'
-import { FaHtml5, FaReact } from 'react-icons/fa6'
+import { FaDatabase, FaHtml5, FaReact } from 'react-icons/fa6'
 import { RiTailwindCssLine } from 'react-icons/ri'
 import { CgVercel } from 'react-icons/cg'
 import './index.css'
@@ -98,16 +98,17 @@ function LandingPage() {
             <img src={img1} alt="" className='w-full h-48 object-cover'/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          <h1 className='text-2xl mb-4 font-heading font-bold text-white'>Blog Website</h1>
-          <p className='text-sm leading-relaxed text-gray-400'>Explore this blog website created with react, using local data to display information</p>
+          <h1 className='text-2xl mb-4 font-heading font-bold text-white'>D-Tech Coding Platform</h1>
+          <p className='text-sm leading-relaxed text-gray-400'>An online coding platform that offers interactive tutorials and real-time tests and exercise features for aspiring developers.</p>
           <div className='flex mt-7 justify-between w-[100%] px-7 mx-auto items-center'>
             <div className='text-xl text-gray-200 flex w-[40%] justify-between'>
               <FaReact/>
               <RiTailwindCssLine/>
               <FaHtml5/>
               <CgVercel/>
+              <FaDatabase/>
             </div>
-            <a href="https://blog-website-dd.vercel.app/" className=' text-gray-200 px-3 py-2 rounded-md bg-white/10 hover:bg-white/30 hover:text-black transition'>Check it out</a>
+            <a href="https://d-tech-services.vercel.app/" className=' text-gray-200 px-3 py-2 rounded-md bg-white/10 hover:bg-white/30 hover:text-black transition'>Check it out</a>
           </div>
         </div>
         <div className='glass relative p-8 overflow-hidden rounded-2xl bg-[#ffffff25] shadow-lg shadow-[#565656] backdrop-blur-xl'>
