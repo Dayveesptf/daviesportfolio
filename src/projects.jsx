@@ -6,14 +6,14 @@ import retailRadar from './assets/retail.png'
 import landingPage from './assets/landing-page.png'
 import multiStepForm from './assets/multi-step.png'
 import ticTacToe from './assets/tic-tac-toe.png'
+import skillforge from './assets/skill-forge.png'
 import weatherApp from './assets/weather-app.png'
 import dTech from './assets/d-tech.png'
 import stopwatch from './assets/stopwatch.png'
 import todoList from './assets/list.png'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
-import laundromat from './assets/laundromat.png'
-import creditRiskPro from './assets/credit-risk-pro.png'
+import trustid from './assets/trust-id.png'
 import { FaGamepad, FaHtml5, FaReact, } from 'react-icons/fa6'
 import { SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { CgVercel } from 'react-icons/cg'
@@ -21,6 +21,7 @@ import { AiFillApi } from 'react-icons/ai'
 import { BiData, BiTimer } from 'react-icons/bi'
 import { GrFormCheckmark } from 'react-icons/gr'
 import { TbApi } from 'react-icons/tb'
+import { BsDatabase } from 'react-icons/bs'
 
 const Projects = () => {
   const sectionsRef = useRef([]);
@@ -79,11 +80,11 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Viva Laudromat",
-      description: "A cloud-based management system that digitized a university laundromat's manual operations, eliminating paper logs and automating resource tracking.",
-      image: laundromat,
-      link: "https://viva-laundromat.vercel.app/",
-      tech: ["React", "Tailwind", "Vercel"],
+      title: "Skill Forge",
+      description: "A cloud-based management system - SkillForge is a multi-tenant, role-based skills assessment platform.",
+      image: skillforge,
+      link: "https://skill-forge-tan.vercel.app/",
+      tech: ["React", "Tailwind", "Vercel", "Typescript", "Database"],
     },
     {
       id: 5,
@@ -103,11 +104,11 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "Credit risk pro",
-      description: "A React-based user portal showing credit scores, verification progress (NIN/BVN/Business), and loan application status with quick-action workflows.",
-      image: creditRiskPro,
-      link: "https://drive.google.com/file/d/12feCjQxo-pqXdkEQCdoGy18w408tnkvg/view?usp=sharing",
-      tech: ["Typescript", "Tailwind", "HTML", "React"],
+      title: "Trust ID",
+      description: "TrustID helps young people build verifiable financial credibility, while giving a bank additional information to support lending decisions.",
+      image: trustid,
+      link: "https://trust-id-theta.vercel.app/",
+      tech: ["Database", "Tailwind", "HTML", "React"],
       featured: false,
       premium: false
     },
@@ -179,7 +180,8 @@ const Projects = () => {
       Game: <FaGamepad />,
       API: <TbApi />,
       Timer: <BiTimer />,
-      Typescript: <SiTypescript />
+      Typescript: <SiTypescript />,
+      Database: <BsDatabase />
     };
 
     return (
